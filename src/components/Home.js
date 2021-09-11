@@ -1,4 +1,8 @@
 import React, {useEffect,useState} from 'react';
+import photo from '../assets/ravi.jpg';
+import placeholderimg from '../assets/carbon.png';
+import adoptapet from '../assets/adoptapet-logo.png';
+
 
 const Home = () => {
 
@@ -6,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
       
-      fetch('https://api.github.com/users/raviikmr/repos')
+      fetch('https://api.github.com/users/iravikds/repos')
       .then(res =>{
         return res.json();
       })
@@ -62,13 +66,13 @@ const Home = () => {
                         products and solving interesting problems.</p>
                       <p><a href="https://1drv.ms/b/s!AmuSxIieD591jEcpjcQB9G3K9GHU?e=ZPKML3" target="_blank" className="btn btn-outline-primary shadow m-2">
                           <i className="fa fa-download" aria-hidden="true" /> Download CV</a>
-                        <a href="mailto:iraviikmr@gmail.com" className="btn btn-outline-primary m-2">
+                        <a href="mailto:iravikds@gmail.com" className="btn btn-outline-primary m-2">
                           <i className="fa fa-comments" aria-hidden="true" /> Contact Me</a>
                           <br></br><br></br>
                                     
-                                    <a href="https://www.linkedin.com/in/raviikmr" class="m-2">
+                                    <a href="https://www.linkedin.com/in/iravikds" class="m-2">
                                     <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
-                                    <a href="https://github.com/RaviiKmr" class="m-2">
+                                    <a href="https://github.com/iravikds" class="m-2">
                                     <i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a>
                                     <a href="https://leetcode/iraviikmr" class="m-2">
                                     <i class="fa fa-code" aria-hidden="true"></i> LeetCode</a>
@@ -76,7 +80,7 @@ const Home = () => {
                           </p>
                     </div>
                     <div className="col-lg-6 order-1 order-lg-2">
-                      <img src="https://raviikmr.github.io/media/ravi.jpg" className="img-fluid border border-primary" style={{borderRadius: '50%'}} width={300} />
+                      <img src={photo} className="img-fluid border border-primary" style={{borderRadius: '50%'}} width={300} />
                     </div>
                   </div>
                 </div>
@@ -89,9 +93,20 @@ const Home = () => {
                   <h2>Projects</h2>
                   <p className="lead text-muted mb-5">Projects I made.</p>
                   <div className="row">
+                  <div className="col-md-4 mb-4">
+                      <div className="card border-0 h-100">
+                        <a href="https://iravikds.github.io/awwdopt-react/" target="_blank"><img src={adoptapet} alt="" className="card-img-top" /></a>
+                        <div className="card-body">
+                          <h5> <a href="https://iravikds.github.io/awwdopt-react/" className="text-dark" target="_blank">
+                              Awwdopt - Pet Adoption Platform</a></h5>
+                          <p className="text-muted card-text">Awwdopt is a pet adoption platform. This project is based on React.js (only frontend)</p>
+                          <p className="card-text"><a href="https://iravikds.github.io/awwdopt-react/">Read more</a></p>
+                        </div>
+                      </div>
+                    </div>
                     <div className="col-md-4 mb-4">
                       <div className="card border-0 h-100">
-                        <a href="https://r4vikumar.pythonanywhere.com" target="_blank"><img src="https://raviikmr.github.io/media/adoptapet-logo.png" alt="" className="card-img-top" /></a>
+                        <a href="https://r4vikumar.pythonanywhere.com" target="_blank"><img src={adoptapet} alt="" className="card-img-top" /></a>
                         <div className="card-body">
                           <h5> <a href="https://r4vikumar.pythonanywhere.com" className="text-dark" target="_blank">
                               AdoptAPet - Pet Adoption Platform</a></h5>
@@ -102,34 +117,34 @@ const Home = () => {
                     </div>
                     <div className="col-md-4 mb-4">
                       <div className="card border-0 h-100">
-                        <a href="https://github.com/RaviiKmr/url-shortner" target="_blank"><img src="https://raviikmr.github.io/media/carbon.png" alt="" className="card-img-top" /></a>
+                        <a href="https://github.com/iravikds/url-shortner" target="_blank"><img src={placeholderimg} alt="" className="card-img-top" /></a>
                         <div className="card-body">
-                          <h5> <a href="https://github.com/RaviiKmr/url-shortner" target="_blank" className="text-dark">
+                          <h5> <a href="https://github.com/iravikds/url-shortner" target="_blank" className="text-dark">
                               URL Shortner</a></h5>
                           <p className="text-muted card-text">Takes long URLs and make them shorter! This project is based on Django.</p>
-                          <p className="card-text"><a href="https://github.com/RaviiKmr/url-shortner" target="_blank">Read more</a></p>
+                          <p className="card-text"><a href="https://github.com/iravikds/url-shortner" target="_blank">Read more</a></p>
                         </div>
                       </div>
                     </div>
                     <div className="col-md-4 mb-4">
                       <div className="card border-0 h-100">
-                        <a href="https://github.com/RaviiKmr/food-recommender-system" target="_blank"><img src="https://raviikmr.github.io/media/carbon.png" alt="" className="card-img-top" /></a>
+                        <a href="https://github.com/iravikds/food-recommender-system" target="_blank"><img src={placeholderimg} alt="" className="card-img-top" /></a>
                         <div className="card-body">
-                          <h5> <a href="https://github.com/RaviiKmr/food-recommender-system" className="text-dark" target="_blank">
+                          <h5> <a href="https://github.com/iravikds/food-recommender-system" className="text-dark" target="_blank">
                               Food Recommender System</a></h5>
                           <p className="text-muted card-text">food recommender system is based on collaborative filtering method which recommends food items based on pre trained model.</p>
-                          <p className="card-text"><a href="https://github.com/RaviiKmr/food-recommender-system" target="_blank">Read more</a></p>
+                          <p className="card-text"><a href="https://github.com/iravikds/food-recommender-system" target="_blank">Read more</a></p>
                         </div>
                       </div>
                     </div>
                     <div className="col-md-4 mb-4">
                       <div className="card border-0 h-100">
-                        <a href="https://github.com/RaviiKmr/covid19tracker" target="_blank"><img src="https://raviikmr.github.io/media/carbon.png" alt="" className="card-img-top" /></a>
+                        <a href="https://github.com/iravikds/covid19tracker" target="_blank"><img src={placeholderimg} alt="" className="card-img-top" /></a>
                         <div className="card-body">
-                          <h5> <a href="https://github.com/RaviiKmr/covid19tracker" target="_blank" className="text-dark">
+                          <h5> <a href="https://github.com/iravikds/covid19tracker" target="_blank" className="text-dark">
                               Covid19 Tracker</a></h5>
                           <p className="text-muted card-text">COVID 19 Tracker India is a minimalist covid19 tracker web app in django framework and web scrapping. </p>
-                          <p className="card-text"><a href="https://github.com/RaviiKmr/covid19tracker" target="_blank">Read more</a></p>
+                          <p className="card-text"><a href="https://github.com/iravikds/covid19tracker" target="_blank">Read more</a></p>
                         </div>
                       </div>
                     </div>

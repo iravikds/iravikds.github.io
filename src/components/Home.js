@@ -98,7 +98,7 @@ const Home = () => {
                         <a href="https://iravikds.github.io/awwdopt-react/" target="_blank"><img src={adoptapet} alt="" className="card-img-top" /></a>
                         <div className="card-body">
                           <h5> <a href="https://iravikds.github.io/awwdopt-react/" className="text-dark" target="_blank">
-                              Awwdopt - Pet Adoption Platform</a></h5>
+                              Awwdopt - Pet Adoption Platform (React.js)</a></h5>
                           <p className="text-muted card-text">Awwdopt is a pet adoption platform. This project is based on React.js (only frontend)</p>
                           <p className="card-text"><a href="https://iravikds.github.io/awwdopt-react/">Read more</a></p>
                         </div>
@@ -109,7 +109,7 @@ const Home = () => {
                         <a href="https://r4vikumar.pythonanywhere.com" target="_blank"><img src={adoptapet} alt="" className="card-img-top" /></a>
                         <div className="card-body">
                           <h5> <a href="https://r4vikumar.pythonanywhere.com" className="text-dark" target="_blank">
-                              AdoptAPet - Pet Adoption Platform</a></h5>
+                              AdoptAPet - Pet Adoption Platform (Django)</a></h5>
                           <p className="text-muted card-text">AdoptAPet is a pet adoption platform. This project is based on Django (backend).</p>
                           <p className="card-text"><a href="https://r4vikumar.pythonanywhere.com">Read more</a></p>
                         </div>

@@ -1,10 +1,26 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import twitterLogo from '../assets/png/twitter-ico.png';
 import linkedinLogo from '../assets/png/linkedin-ico.png';
 import githubLogo from '../assets/png/github-ico.png';
 
 
+
 const Body = () => {
+
+    const [repos, setRepos] = useState([]);
+
+    useEffect(() => {
+      
+      fetch('https://api.github.com/users/iravikds/repos')
+      .then(res =>{
+        return res.json();
+      })
+      .then(data =>{
+        setRepos(data);
+      });
+
+    }, [])
+
     return (
         <div>
             <div>
@@ -121,21 +137,21 @@ const Body = () => {
                         </h2>
                         <div className="row center-text">
                             <div className="col-md-4 mb-4">
-                                <div className="card border-0 h-100"><a href="https://github.com/iravikds/covid19tracker" target="_blank"><img src="/static/media/carbon.b300cdd1.png" alt="" className="card-img-top" /></a>
+                                <div className="card border-0 h-100"><a href="https://github.com/iravikds/covid19tracker" target="_blank" rel="noreferrer"><img src="/static/media/carbon.b300cdd1.png" alt="" className="card-img-top" /></a>
                                     <div className="card-body">
-                                        <h5 className="projects__row-content-title"> <a href="https://iravikds.github.io/covid19india-react" target="_blank" className="text-dark">Covid19
+                                        <h5 className="projects__row-content-title"> <a href="https://iravikds.github.io/covid19india-react" target="_blank" rel="noreferrer" className="text-dark">Covid19
                                             Tracker</a></h5>
                                         <p className="text-muted card-text projects__row-content-desc">COVID 19 Tracker India is a minimalist covid19 tracker web app in React.js
                                             library using APIs to fetch data. </p>
-                                        <p className="card-text"><a href="https://iravikds.github.io/covid19india-react" target="_blank">Read more</a>
+                                        <p className="card-text"><a href="https://iravikds.github.io/covid19india-react" target="_blank" rel="noreferrer">Read more</a>
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-4">
-                                <div className="card border-0 h-100"><a href="https://r4vikumar.pythonanywhere.com" target="_blank"><img src="/static/media/adoptapet-logo.ab599236.png" alt="" className="card-img-top" /></a>
+                                <div className="card border-0 h-100"><a href="https://r4vikumar.pythonanywhere.com" target="_blank" rel="noreferrer"><img src="/static/media/adoptapet-logo.ab599236.png" alt="" className="card-img-top" /></a>
                                     <div className="card-body">
-                                        <h5 className="projects__row-content-title"> <a href="https://r4vikumar.pythonanywhere.com" className="text-dark" target="_blank">AdoptAPet - Pet
+                                        <h5 className="projects__row-content-title"> <a href="https://r4vikumar.pythonanywhere.com" className="text-dark" target="_blank" rel="noreferrer">AdoptAPet - Pet
                                             Adoption Platform</a></h5>
                                         <p className="text-muted card-text projects__row-content-desc">AdoptAPet is a pet adoption platform. This project is based on Django
                                             (backend) and React.js as frontend.</p>
@@ -144,17 +160,44 @@ const Body = () => {
                                 </div>
                             </div>
                             <div className="col-md-4 mb-4">
-                                <div className="card border-0 h-100"><a href="https://github.com/iravikds/url-shortner" target="_blank"><img src="/static/media/carbon.b300cdd1.png" alt="" className="card-img-top" /></a>
+                                <div className="card border-0 h-100"><a href="https://github.com/iravikds/url-shortner" target="_blank" rel="noreferrer"><img src="/static/media/carbon.b300cdd1.png" alt="" className="card-img-top" /></a>
                                     <div className="card-body">
-                                        <h5 className="projects__row-content-title"> <a href="https://github.com/iravikds/url-shortner" target="_blank" className="text-dark">URL Shortner</a>
+                                        <h5 className="projects__row-content-title"> <a href="https://github.com/iravikds/url-shortner" target="_blank" rel="noreferrer" className="text-dark">URL Shortner</a>
                                         </h5>
                                         <p className="text-muted card-text projects__row-content-desc">Takes long URLs and make them shorter! This project is based on Django.
                                         </p>
-                                        <p className="card-text"><a href="https://github.com/iravikds/url-shortner" target="_blank">Read more</a></p>
+                                        <p className="card-text"><a href="https://github.com/iravikds/url-shortner" target="_blank" rel="noreferrer">Read more</a></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section>
+                <div className="main-container">
+                <h2 className="heading heading-sec heading-sec__mb-bg">
+                            <span className="heading-sec__main">GIT REPOS</span>
+                </h2>
+
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Language</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {repos.map((item) =>(
+                        <tr>
+                            <td><a href={item.svn_url} className="text-dark text-decoration-none" target="_blank">
+                            {item.name}</a></td>
+                            <td>{item.description}</td>
+                            <td>{item.language}</td>
+                        </tr>
+                        ))}
+                        </tbody>
+                    </table>
                     </div>
                 </section>
                 <section id="contact" className="contact sec-pad dynamicBg">

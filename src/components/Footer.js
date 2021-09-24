@@ -24,6 +24,9 @@ const Footer = () => {
                                 <a target="_blank" rel="noreferrer" href="https://twitter.com/iravikds">
                                     <img className="main-footer__icon" src={twitterLogo} alt="icon" />
                                 </a>
+                                <a target="_blank" rel="noreferrer" href="https://leetcode.com/iraviikmr">
+                                    <img className="main-footer__icon" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/LeetCode_logo_white_no_text.svg" alt="icon" />
+                                </a>
                                 {/* <a target="_blank" rel="noreferrer" href="#">
                                     <img className="main-footer__icon" src="./assets/png/yt-ico.png" alt="icon" />
                                 </a>

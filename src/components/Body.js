@@ -36,6 +36,11 @@ const Body = () => {
                                 <img src={twitterLogo} alt="icon" className="home-hero__social-icon" />
                             </a>
                         </div>
+                        <div className="home-hero__social">
+                            <a href="https://leetcode.com/iraviikmr" className="home-hero__social-icon-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/LeetCode_logo_white_no_text.svg" alt="icon" className="home-hero__social-icon" />
+                            </a>
+                        </div>
                         {/* <div className="home-hero__social">
                             <a href="#" className="home-hero__social-icon-link">
                                 <img src="./assets/png/yt-ico.png" alt="icon" className="home-hero__social-icon" />
@@ -99,6 +104,7 @@ const Body = () => {
                                     <div className="skills__skill">Wordpress</div>
                                     <div className="skills__skill">Node</div>
                                     <div className="skills__skill">Android</div>
+                                    <div className="skills__skill">AWS</div>
                                 </div>
                             </div>
                         </div>

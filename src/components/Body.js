@@ -26,7 +26,7 @@ const Body = () => {
             <div>
                 <section className="home-hero">
                     <div className="home-hero__content">
-                        <h1 className="heading-primary">Hey, My name is Ravi Das</h1>
+                        <h1 className="heading-primary">Hey, My name is <strong>Ravi Das</strong></h1>
                         <div className="home-hero__info">
                             <p className="text-primary2">
                                 Software Engineer

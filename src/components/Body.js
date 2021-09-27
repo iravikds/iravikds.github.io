@@ -88,18 +88,10 @@ const Body = () => {
                                         Hey! It's
                                         <strong> Ravi Das </strong>
                                         and I'm a <strong> Software Developer </strong> located in
-                                        Jharkhand. I've done
-                                        <strong> remote </strong>
-                                        projects for agencies and collaborated
-                                        with talented people to create
-                                        <strong> digital products </strong>
-                                        for both business and consumer use.
+                                        Jharkhand. I'm a software engineer specializing in both <strong>backend</strong> and <strong>frontend</strong> technologies. 
                                     </p>
                                     <p className="about__content-details-para">
-                                        I'm a bit of a digital product junky. Over the years, I've used
-                                        hundreds of web and mobile apps in different industries and
-                                        verticals. Feel free to
-                                        <strong> contact </strong> me here.
+                                    If you want to know more then contact me.
                                     </p>
                                 </div>
                                 <a href="#contact" className="btn2 btn2--med btn2--theme dynamicBgClr">Contact</a>
@@ -110,15 +102,17 @@ const Body = () => {
                                     <div className="skills__skill">Django</div>
                                     <div className="skills__skill">React</div>
                                     <div className="skills__skill">Python</div>
-                                    <div className="skills__skill">Bootstrap</div>
+                                    <div className="skills__skill">Java</div>
+                                    <div className="skills__skill">JavaScript</div>
+                                    <div className="skills__skill">NodeJS</div>
                                     <div className="skills__skill">HTML</div>
                                     <div className="skills__skill">CSS</div>
-                                    <div className="skills__skill">JavaScript</div>
-                                    <div className="skills__skill">Java</div>
                                     <div className="skills__skill">GIT</div>
+                                    <div className="skills__skill">SQL</div>
+                                    <div className="skills__skill">MongoDB</div>
+                                    <div className="skills__skill">Bootstrap</div>
                                     <div className="skills__skill">Unity</div>
                                     <div className="skills__skill">Wordpress</div>
-                                    <div className="skills__skill">Node</div>
                                     <div className="skills__skill">Android</div>
                                     <div className="skills__skill">AWS</div>
                                 </div>

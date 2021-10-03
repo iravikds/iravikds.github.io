@@ -99,11 +99,13 @@ const Body = () => {
                             <div className="about__content-skills">
                                 <h3 className="about__content-title">My Skills</h3>
                                 <div className="skills">
-                                    <div className="skills__skill">Django</div>
-                                    <div className="skills__skill">React</div>
                                     <div className="skills__skill">Python</div>
                                     <div className="skills__skill">Java</div>
                                     <div className="skills__skill">JavaScript</div>
+                                    <div className="skills__skill">C#</div>
+                                    <div className="skills__skill">C</div>
+                                    <div className="skills__skill">React</div>
+                                    <div className="skills__skill">Django</div>
                                     <div className="skills__skill">NodeJS</div>
                                     <div className="skills__skill">HTML</div>
                                     <div className="skills__skill">CSS</div>

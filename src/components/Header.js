@@ -29,6 +29,11 @@ const Header = () => {
                                 </a>
                             </li>
                             <li className="header__link-wrapper">
+                                <a href="https://1drv.ms/b/s!AmuSxIieD591jEcpjcQB9G3K9GHU?e=6fzle3" className="header__link">
+                                    Resume
+                                </a>
+                            </li>
+                            <li className="header__link-wrapper">
                                 <a href="#contact" className="header__link"> Contact </a>
                             </li>
                         </ul>

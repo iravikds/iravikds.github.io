@@ -74,7 +74,7 @@ const Home = () => {
                                     <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
                                     <a href="https://github.com/iravikds" class="m-2">
                                     <i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a>
-                                    <a href="https://leetcode/iraviikmr" class="m-2">
+                                    <a href="https://leetcode/iravikds" class="m-2">
                                     <i class="fa fa-code" aria-hidden="true"></i> LeetCode</a>
                           
                           </p>
